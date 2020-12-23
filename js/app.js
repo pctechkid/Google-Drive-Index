@@ -660,7 +660,7 @@ function file_video(path) {
    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
   <div class="btn-group" role="group">
     <button id="btnGroupDrop1" type="button"
-            class="btn btn-success dropdown-toggle"
+            class="btn btn-primary dropdown-toggle"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Play with External Player
     </button>
@@ -670,7 +670,7 @@ function file_video(path) {
 	  <a class="dropdown-item" href="potplayer://${url}" class="btn btn-success">PotPlayer</a>
     </div>
   </div>
-  <button type="button" class="btn btn-danger">Download</button>
+  <button type="button" class="btn btn-light"><a href="${url}">Download</a></button>
 </div><br>
   </div>
   </div>
