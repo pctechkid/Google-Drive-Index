@@ -651,6 +651,7 @@ function file_video(path) {
 	const content = `
   <link href="https://cdn.jsdelivr.net/gh/jscdn/css@master/video-js/video-js.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/gh/jscdn/js@master/video-js/video-js.min.js"></script>
+  <script src="https://use.fontawesome.com/ebb2785d4e.js"></script>
   <div class="container"><br>
   <div class="card">
   <div class="card-body text-center">
@@ -662,7 +663,7 @@ function file_video(path) {
     <button id="btnGroupDrop1" type="button"
             class="btn btn-primary dropdown-toggle"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <i class="bi bi-play-circle"></i> Play with External Player
+      <i class="far fa-play-circle"></i> Play with External Player
     </button>
     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
       <a class="dropdown-item" href="vlc://${vlc}">VLC Media</a>
@@ -670,7 +671,7 @@ function file_video(path) {
 	  <a class="dropdown-item" href="potplayer://${url}">PotPlayer</a>
     </div>
   </div>
-  <button type="button" class="btn btn-dark"><a href="${url}"><i class="bi bi-download"></i>Download</a></button>
+  <a href="${url}"><i class="fas fa-download"></i> Download</a>
 </div><br>
   </div>
   </div>
