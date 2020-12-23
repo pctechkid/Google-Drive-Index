@@ -621,7 +621,7 @@ function file_code(path) {
 <div class="container"><br>
 <div class="card">
 <div class="card-body">
-  <div class="alert alert-info" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
+  <div class="alert alert-dark" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
 <code id="editor" class="card-text"></code>
 </div>
 <p class="card-text text-center"><a href="${href}" class="btn btn-primary">Download</a></p><br>`;
@@ -654,7 +654,7 @@ function file_video(path) {
   <div class="container"><br>
   <div class="card">
   <div class="card-body text-center">
-  <div class="alert alert-info" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
+  <div class="alert alert-dark" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   
   </div>
   <p class="card-text text-center"><a href="${url}" class="btn btn-primary">Download</a>
@@ -672,7 +672,7 @@ function file_audio(path) {
   <div class="container"><br>
   <div class="card">
   <div class="card-body text-center">
-  <div class="alert alert-info" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
+  <div class="alert alert-dark" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   <audio controls>
     <source src="${url}" type="audio/ogg">
     <source src="${url}" type="audio/mpeg">
@@ -695,7 +695,7 @@ function file_pdf(path) {
   <div class="container"><br>
   <div class="card">
   <div class="card-body text-center">
-  <div class="alert alert-info" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
+  <div class="alert alert-dark" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   <object data="${inline_url}" type="application/pdf" name="${file_name}" style="width:100%;height:94vh;"><embed src="${inline_url}" type="application/pdf"/></object>
   </div>
   <p class="card-text text-center"><a href="${url}" class="btn btn-primary">Download</a></p><br>
@@ -739,7 +739,7 @@ function file_image(path) {
   <div class="container"><br>
   <div class="card">
   <div class="card-body text-center">
-  <div class="alert alert-info" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
+  <div class="alert alert-dark" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   <img src="${url}" width="50%">
   </div>
   <p class="card-text text-center"><a href="${url}" class="btn btn-primary">Download</a></p><br>
