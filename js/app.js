@@ -672,7 +672,7 @@ function file_video(path) {
     </div>
   </div>
 <p class="card-text text-center">
-  <a class="btn btn-outline-success btn-block" href="${dl}"><i class="fa fa-download"></i> &nbsp;Download</a>
+  <a class="btn btn-block" href="${dl}"><i class="fa fa-download"></i> &nbsp;Download</a>
 </p><br>
   </div>
   </div>
