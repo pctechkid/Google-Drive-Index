@@ -657,7 +657,7 @@ function file_video(path) {
   <div class="alert alert-info" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   
   </div>
-  <p class="card-text text-center"><a href="${url}" class="btn btn-primary">Download</a>
+  <p class="card-text text-center"><a href="${url2}" class="btn btn-primary">Download</a>
   <a href="vlc://${url}" class="btn btn-success">VLC Player</a></p><br>
   </div>
   </div>
