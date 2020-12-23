@@ -671,8 +671,10 @@ function file_video(path) {
 	  <a class="dropdown-item" href="potplayer://${url}">PotPlayer</a>
     </div>
   </div>
-  <a href="${url}"><i class="fa fa-download"></i> Download</a>
-</div><br>
+</div>
+<p class="card-text text-center">
+  <a href="${url}" class="btn btn-danger">Download</a>
+</p><br>
   </div>
   </div>
   `;
