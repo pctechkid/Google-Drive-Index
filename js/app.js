@@ -662,7 +662,7 @@ function file_video(path) {
   <button onclick="location.href='intent:${url}#Intent;package=com.mxtech.videoplayer.pro;end'" type="button" class="btn btn-info">MX Player</button>
 </div>
 <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-  <button onclick="location.href='potplayer://${url}'" type="button" class="btn btn-success">PotPlayer</button>
+  <button onclick="location.href='potplayer://${url}'" type="button" class="btn btn-success">Pot Player</button>
   <button onclick="location.href='${url}'" type="button" class="btn btn-danger">Download</button>
 </div><br>
   </div>
