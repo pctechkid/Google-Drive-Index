@@ -662,15 +662,15 @@ function file_video(path) {
     <button id="btnGroupDrop1" type="button"
             class="btn btn-primary dropdown-toggle"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Play with External Player
+      <i class="bi bi-play-circle"></i> Play with External Player
     </button>
     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
       <a class="dropdown-item" href="vlc://${vlc}">VLC Media</a>
       <a class="dropdown-item" href="intent:${url}#Intent;package=com.mxtech.videoplayer.pro;end">MX Player Pro</a>
-	  <a class="dropdown-item" href="potplayer://${url}" class="btn btn-success">PotPlayer</a>
+	  <a class="dropdown-item" href="potplayer://${url}">PotPlayer</a>
     </div>
   </div>
-  <button type="button" class="btn btn-dark"><a href="${url}">Download</a></button>
+  <button type="button" class="btn btn-dark"><a href="${url}"><i class="bi bi-download"></i>Download</a></button>
 </div><br>
   </div>
   </div>
