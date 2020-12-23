@@ -658,12 +658,11 @@ function file_video(path) {
   <div class="alert alert-dark" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   
   </div>
-   <div class="btn-group card-text text-center" role="group" aria-label="Button group with nested dropdown">
   <div class="btn-group" role="group">
     <button id="btnGroupDrop1" type="button"
             class="btn btn-primary dropdown-toggle"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <i class="fa fa-play-circle"></i> Play with External Player
+      <i class="fa fa-play-circle"></i>  Play with External Player
     </button>
     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
       <a class="dropdown-item" href="vlc://${vlc}">VLC Media</a>
@@ -671,9 +670,8 @@ function file_video(path) {
 	  <a class="dropdown-item" href="potplayer://${url}">PotPlayer</a>
     </div>
   </div>
-</div>
 <p class="card-text text-center">
-  <a href="${url}" class="btn btn-dark"><i class="fa fa-download"></i> Download</a>
+  <a class="btn btn-outline-danger btn-block" href="${url}"><i class="fa fa-download"></i> Download</a>
 </p><br>
   </div>
   </div>
