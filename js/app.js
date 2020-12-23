@@ -662,7 +662,7 @@ function file_video(path) {
     <button id="btnGroupDrop1" type="button"
             class="btn btn-primary dropdown-toggle"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <i class="fa fa-play-circle"></i>  Play with External Player
+      <i class="fa fa-play-circle"></i> &nbsp;Play with External Player
     </button>
     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
       <a class="dropdown-item" href="vlc://${vlc}">VLC Media</a>
@@ -671,7 +671,7 @@ function file_video(path) {
     </div>
   </div>
 <p class="card-text text-center">
-  <a class="btn btn-outline-danger btn-block" href="${url}"><i class="fa fa-download"></i> Download</a>
+  <a class="btn btn-outline-success btn-block" href="${url}"><i class="fa fa-download"></i> &nbsp;Download</a>
 </p><br>
   </div>
   </div>
