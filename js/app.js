@@ -67,7 +67,18 @@ function render(path) {
 
 
 // Render title
-
+function title(path) {
+	path = decodeURI(path);
+	var cur = window.current_drive_order || 0;
+	var drive_name = window.drive_names[cur];
+	path = path.replace(`/${cur}:`, '');
+	// $('title').html(document.siteName + ' - ' + path);
+	var model = window.MODEL;
+	if (model.is_search_page)
+		$('title').html(`${drive_name}`);
+	else
+		$('title').html(`${drive_name}`);
+}
 
 // Render the navigation bar
 function nav(path) {
