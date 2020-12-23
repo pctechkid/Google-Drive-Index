@@ -93,52 +93,7 @@ function nav(path) {
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="/${cur}:/">Home</a>
-      </li>`;
-	var names = window.drive_names;
-	var drive_name = window.drive_names[cur];
-	/*html += `<button class="mdui-btn mdui-btn-raised" mdui-menu="{target: '#drive-names'}"><i class="mdui-icon mdui-icon-left material-icons">share</i> ${names[cur]}</button>`;
-	html += `<ul class="mdui-menu" id="drive-names" style="transform-origin: 0px 0px; position: fixed;">`;
-	names.forEach((name, idx) => {
-	    html += `<li class="mdui-menu-item ${(idx === cur) ? 'mdui-list-item-active' : ''} "><a href="/${idx}:/" class="mdui-ripple">${name}</a></li>`;
-	});
-	html += `</ul>`;*/
-
-	// Dropdown to select different drive roots.
-	html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">${drive_name}</a><div class="dropdown-menu" aria-labelledby="navbarDropdown">`;
-	names.forEach((name, idx) => {
-		html += `<a class="dropdown-item"  href="/${idx}:/">${name}</a>`;
-	});
-	html += `</div></li>`;
-
-	html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Current Path</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href="/${cur}:/ ">> Home</a>`;
-
-	if (!model.is_search_page) {
-		var arr = path.trim('/').split('/');
-		var p = '/';
-		if (arr.length > 1) {
-			arr.shift();
-			for (i in arr) {
-				var n = arr[i];
-				n = decodeURI(n);
-				p += n + '/';
-				if (n == '') {
-					break;
-				}
-				html += `<a class="dropdown-item"  href="/${cur}:${p}">> ${n}</a>`;
-			}
-		}
-	}
-
-	html += `</div></li><li class="nav-item">
-    <a class="nav-link" href="${UI.contact_link}" target="_blank">Contact</a>
-  </li>`;
-
-	var search_text = model.is_search_page ? (model.q || '') : '';
-	const isMobile = Os.isMobile;
-	var search_bar = `
-</ul>
+	</ul>
 <form class="form-inline my-2 my-lg-0" method="get" action="/${cur}:search">
 <input class="form-control mr-sm-2" name="q" type="search" placeholder="Search" aria-label="Search" value="${search_text}" required>
 <button class="btn ${UI.dark_mode ? 'btn-secondary' : 'btn-outline-success'} my-2 my-sm-0" onclick="if($('#search_bar').hasClass('mdui-textfield-expanded') && $('#search_bar_form>input').val()) $('#search_bar_form').submit();" type="submit">Search</button>
