@@ -658,7 +658,7 @@ function file_video(path) {
   <div class="alert alert-dark" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   
   </div>
-   <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+   <div class="btn-group card-text text-center" role="group" aria-label="Button group with nested dropdown">
   <div class="btn-group" role="group">
     <button id="btnGroupDrop1" type="button"
             class="btn btn-primary dropdown-toggle"
