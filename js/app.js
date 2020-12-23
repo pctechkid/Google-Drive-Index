@@ -93,9 +93,7 @@ function nav(path) {
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="/${cur}:/">Home</a>
-      </li>`;
+      `;
 	var names = window.drive_names;
 	var drive_name = window.drive_names[cur];
 	/*html += `<button class="mdui-btn mdui-btn-raised" mdui-menu="{target: '#drive-names'}"><i class="mdui-icon mdui-icon-left material-icons">share</i> ${names[cur]}</button>`;
@@ -106,13 +104,13 @@ function nav(path) {
 	html += `</ul>`;*/
 
 	// Dropdown to select different drive roots.
-	html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">${drive_name}</a><div class="dropdown-menu" aria-labelledby="navbarDropdown">`;
+	html += ``;
 	names.forEach((name, idx) => {
 		html += `<a class="dropdown-item"  href="/${idx}:/">${name}</a>`;
 	});
 	html += `</div></li>`;
 
-	html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Current Path</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href="/${cur}:/ ">> Home</a>`;
+	html += ``;
 
 	if (!model.is_search_page) {
 		var arr = path.trim('/').split('/');
@@ -131,9 +129,7 @@ function nav(path) {
 		}
 	}
 
-	html += `</div></li><li class="nav-item">
-    <a class="nav-link" href="${UI.contact_link}" target="_blank">Contact</a>
-  </li>`;
+	html += ``;
 
 	var search_text = model.is_search_page ? (model.q || '') : '';
 	const isMobile = Os.isMobile;
