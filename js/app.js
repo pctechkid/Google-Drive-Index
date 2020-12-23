@@ -657,8 +657,12 @@ function file_video(path) {
   <div class="alert alert-dark" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   
   </div>
-  <p class="card-text text-center"><a href="${url}" class="btn btn-primary">Download</a>
-  <a href="vlc://${vlc}" class="btn btn-success">VLC Player</a></p><br>
+  <p class="card-text text-center">
+  <a href="vlc://${vlc}" class="btn btn-success">VLC Player</a>
+  <a href="intent:{url}#Intent;package=com.mxtech.videoplayer.pro;S.title={title};end" class="btn btn-info">MX Player Pro</a>
+  <a href="potplayer://${url}" class="btn btn-warning">PotPlayer</a>
+  <a href="${url}" class="btn btn-danger">Download</a>
+  </p><br>
   </div>
   </div>
   `;
