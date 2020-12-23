@@ -647,6 +647,7 @@ function copyToClipboard(str) {
 // Document display video |mp4|webm|avi|
 function file_video(path) {
 	const url = window.location.origin + path;
+	const dl = url.replace(/\[/g,'%5B').replace(/\]/g,'%5D');
 	const vlc = url.replace(/\[/g,'%5B').replace(/\]/g,'%5D');
 	const content = `
   <link href="https://cdn.jsdelivr.net/gh/jscdn/css@master/video-js/video-js.min.css" rel="stylesheet">
@@ -671,7 +672,7 @@ function file_video(path) {
     </div>
   </div>
 <p class="card-text text-center">
-  <a class="btn btn-outline-success btn-block" href="${url}"><i class="fa fa-download"></i> &nbsp;Download</a>
+  <a class="btn btn-outline-success btn-block" href="${dl}"><i class="fa fa-download"></i> &nbsp;Download</a>
 </p><br>
   </div>
   </div>
