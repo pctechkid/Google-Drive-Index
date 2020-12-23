@@ -659,7 +659,7 @@ function file_video(path) {
   </div>
   <p class="card-text text-center">
   <a href="vlc://${vlc}" class="btn btn-warning">VLC Player</a>
-  <a href="intent:${url}#Intent;package=com.mxtech.videoplayer.pro;end" class="btn btn-info">MX Player Pro</a>
+  <a href="intent:${url}#Intent;package=com.mxtech.videoplayer.pro;end" class="btn btn-info">MX Player Pro</a><br>
   <a href="potplayer://${url}" class="btn btn-success">PotPlayer</a>
   <a href="${url}" class="btn btn-danger">Download</a>
   </p><br>
