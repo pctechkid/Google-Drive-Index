@@ -646,8 +646,8 @@ function copyToClipboard(str) {
 
 // Document display video |mp4|webm|avi|
 function file_video(path) {
-	const url2 = window.location.origin + path;
-	const url = url2.replace(/\[/g,'%5B').replace(/\]/g,'%5D');
+	const url = window.location.origin + path;
+	const vlc = url.replace(/\[/g,'%5B').replace(/\]/g,'%5D');
 	const content = `
   <link href="https://cdn.jsdelivr.net/gh/jscdn/css@master/video-js/video-js.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/gh/jscdn/js@master/video-js/video-js.min.js"></script>
@@ -657,8 +657,8 @@ function file_video(path) {
   <div class="alert alert-info" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   
   </div>
-  <p class="card-text text-center"><a href="${url2}" class="btn btn-primary">Download</a>
-  <a href="vlc://${url}" class="btn btn-success">VLC Player</a></p><br>
+  <p class="card-text text-center"><a href="${url}" class="btn btn-primary">Download</a>
+  <a href="vlc://${vlc}" class="btn btn-success">VLC Player</a></p><br>
   </div>
   </div>
   `;
