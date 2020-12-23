@@ -657,12 +657,12 @@ function file_video(path) {
   <div class="alert alert-dark" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   
   </div>
-  <p class="card-text text-center">
-  <a href="vlc://${vlc}" class="btn btn-warning">VLC Player</a>
-  <a href="intent:${url}#Intent;package=com.mxtech.videoplayer.pro;end" class="btn btn-info">MX Player Pro</a><br>
-  <a href="potplayer://${url}" class="btn btn-success">PotPlayer</a>
-  <a href="${url}" class="btn btn-danger">Download</a>
-  </p><br>
+  <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+  <button onclick="location.href='vlc://${vlc}'" type="button" class="btn btn-warning">VLC Media</button>
+  <button onclick="location.href='intent:${url}#Intent;package=com.mxtech.videoplayer.pro;end'" type="button" class="btn btn-info">MX Player Pro</button>
+  <button onclick="location.href='potplayer://${url}'" type="button" class="btn btn-success">PotPlayer</button>
+  <button onclick="location.href='${url}'" type="button" class="btn btn-danger">Download</button>
+</div><br>
   </div>
   </div>
   `;
