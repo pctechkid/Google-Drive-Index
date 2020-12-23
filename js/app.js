@@ -658,7 +658,7 @@ function file_video(path) {
   
   </div>
   <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-  <button onclick="location.href='vlc://${vlc}'" type="button" class="btn btn-warning">VLC Media</button>
+  <button onclick="location.href='vlc://${vlc}'" type="button" class="btn btn-warning">VLC Player</button>
   <button onclick="location.href='intent:${url}#Intent;package=com.mxtech.videoplayer.pro;end'" type="button" class="btn btn-info">MX Player Pro</button>
 </div>
 <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
