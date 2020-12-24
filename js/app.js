@@ -662,7 +662,7 @@ function file_video(path) {
   </div>
   <div class="btn-group mx-auto" role="group">
     <button id="btnGroupDrop1" type="button"
-            class="btn btn-primary dropdown-toggle"
+            class="btn btn-dark dropdown-toggle"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="fa fa-play-circle"></i> &nbsp;   Play with External Player
     </button>
@@ -673,7 +673,7 @@ function file_video(path) {
     </div>
   </div>
 <p class="card-text text-center">
-  <a class="btn mx-auto" href="${dl}"><i class="fa fa-download"></i> &nbsp;   Download</a>
+  <a class="btn btn-dark mx-auto" href="${dl}"><i class="fa fa-download"></i> &nbsp;   Download</a>
 </p><br>
   </div>
   </div>
