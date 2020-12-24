@@ -653,7 +653,6 @@ function file_video(path) {
 	const content = `
   <link href="https://cdn.jsdelivr.net/gh/jscdn/css@master/video-js/video-js.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/gh/jscdn/js@master/video-js/video-js.min.js"></script>
-  <script src="https://use.fontawesome.com/ebb2785d4e.js"></script>
   <div class="container"><br>
   <div class="card">
   <div class="card-body text-center">
