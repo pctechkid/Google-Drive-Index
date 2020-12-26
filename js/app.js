@@ -667,7 +667,7 @@ function file_video(path) {
     </button>
     <div class="dropdown-menu btn-block" aria-labelledby="btnGroupDrop1">
       <a class="dropdown-item text-center" href="vlc://${vlc}">VLC Media</a>
-      <a class="dropdown-item text-center" href="intent:${mx}#Intent;package=com.mxtech.videoplayer.pro;S.title={item.name};end">MX Player Pro</a>
+      <a class="dropdown-item text-center" href="intent:${mx}#Intent;package=com.mxtech.videoplayer.pro;S.title=${item.name};end">MX Player Pro</a>
 	  <a class="dropdown-item text-center" href="potplayer://${url}">PotPlayer</a>
     </div>
   </div>
