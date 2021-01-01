@@ -649,7 +649,6 @@ function file_video(path) {
 	const url = window.location.origin + path;
 	const dl = url.replace(/\[/g,'%5B').replace(/\]/g,'%5D');
 	const vlc = url.replace(/\[/g,'%5B').replace(/\]/g,'%5D');
-	const mx = url.replace(/\%20/g,' ');
 	const content = `
   <link href="https://cdn.jsdelivr.net/gh/jscdn/css@master/video-js/video-js.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/gh/jscdn/js@master/video-js/video-js.min.js"></script>
@@ -667,7 +666,7 @@ function file_video(path) {
     </button>
     <div class="dropdown-menu btn-block" aria-labelledby="btnGroupDrop1">
       <a class="dropdown-item text-center" href="vlc://${vlc}">VLC Media Player</a>
-      <a class="dropdown-item text-center" href="intent:${mx}#Intent;package=com.mxtech.videoplayer.pro;end">MX Player Pro</a>
+      <a class="dropdown-item text-center" href="intent:${url}#Intent;package=com.mxtech.videoplayer.pro;end">MX Player Pro</a>
 	  <a class="dropdown-item text-center" href="nplayer-${vlc}">nPlayer</a>
 	  <a class="dropdown-item text-center" href="potplayer://${url}">PotPlayer</a>
     </div>
