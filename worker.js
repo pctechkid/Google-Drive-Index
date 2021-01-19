@@ -57,7 +57,7 @@ const authConfig = {
 const uiConfig = {
 	"theme": "bhadoo_bootstrap", // Change doesn't works
 	"dark_mode": true, // switch between light or dark themes
-	"version": "525f054", // don't touch this one. get latest code using generator at https://github.com/pctechkid/Google-Drive-Index
+	"version": "604cdf0", // don't touch this one. get latest code using generator at https://github.com/pctechkid/Google-Drive-Index
 	"logo_image": false, // true if you're using image link in next option.
 	"logo_link_name": "Ronnel&apos;s Cloud", // if logo is true then link otherwise just text for name
 	"contact_link": "", // Link to Contact Button on Menu
