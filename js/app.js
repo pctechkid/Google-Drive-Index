@@ -658,6 +658,9 @@ function file_video(path) {
   <div class="alert alert-dark" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   
   </div>
+  <p class="card-text text-center">
+  <a class="btn btn-dark mx-auto" href="${dl}"><i class="fa fa-download"></i> &nbsp;   Download</a>
+</p>
   <div class="btn-group mx-auto" role="group">
     <button id="btnGroupDrop1" type="button"
             class="btn btn-dark dropdown-toggle"
@@ -671,9 +674,7 @@ function file_video(path) {
 	  <a class="dropdown-item text-center" href="potplayer://${url}">PotPlayer</a>
     </div>
   </div>
-<p class="card-text text-center">
-  <a class="btn btn-dark mx-auto" href="${dl}"><i class="fa fa-download"></i> &nbsp;   Download</a>
-</p><br>
+<br>
   </div>
   </div>
   `;
