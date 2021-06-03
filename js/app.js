@@ -658,13 +658,16 @@ function file_video(path) {
   <div class="alert alert-dark" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   
   </div>
-  <div class="btn-group-vertical" role="group">
-		  <button class="btn btn-success mx-auto" href="${dl}"><i class="fa fa-download"></i> &nbsp;   Download</a>
-		  <button class="btn btn-primary mx-auto" href="intent:${url}#Intent;package=com.mxtech.videoplayer.pro;B.secure_uri=true;end"><i class="fa fa-play-circle"></i> &nbsp;   MX Player Pro</a>
-		  <button class="btn btn-danger mx-auto" href="vlc://${vlc}"><i class="fa fa-play-circle"></i> &nbsp;   VLC Media Player</a>
-  </div>	
+  	
   
 <br>
+  </div>
+  <div class="card">
+  <div class="btn-group-vertical" role="group">
+		  <a class="btn btn-success mx-auto" href="${dl}"><i class="fa fa-download"></i> &nbsp;   Download</a>
+		  <a class="btn btn-primary mx-auto" href="intent:${url}#Intent;package=com.mxtech.videoplayer.pro;B.secure_uri=true;end"><i class="fa fa-play-circle"></i> &nbsp;   MX Player Pro</a>
+		  <a class="btn btn-danger mx-auto" href="vlc://${vlc}"><i class="fa fa-play-circle"></i> &nbsp;   VLC Media Player</a>
+  </div>
   </div>
   </div>
   `;
