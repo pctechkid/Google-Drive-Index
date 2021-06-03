@@ -659,21 +659,11 @@ function file_video(path) {
   
   </div>
   <p class="card-text text-center">
-  <a class="btn btn-dark mx-auto" href="${dl}"><i class="fa fa-download"></i> &nbsp;   Download</a>
+  <a class="btn btn-primary mx-auto" href="${dl}"><i class="fa fa-download"></i> &nbsp;   Download</a>
+  <a class="btn btn-success mx-auto" href="intent:${url}#Intent;package=com.mxtech.videoplayer.pro;B.secure_uri=true;end"><i class="fa fa-play-circle"></i> &nbsp;   MX Player Pro</a>
+  <a class="btn btn-danger mx-auto" href="vlc://${vlc}"><i class="fa fa-play-circle"></i> &nbsp;   VLC Media Player</a>
 </p>
-  <div class="btn-group mx-auto" role="group">
-    <button id="btnGroupDrop1" type="button"
-            class="btn btn-dark dropdown-toggle"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <i class="fa fa-play-circle"></i> &nbsp;   Play with External Player
-    </button>
-    <div class="dropdown-menu btn-block" aria-labelledby="btnGroupDrop1">
-      <a class="dropdown-item text-center" href="vlc://${vlc}">VLC Media Player</a>
-      <a class="dropdown-item text-center" href="intent:${url}#Intent;package=com.mxtech.videoplayer.pro;B.secure_uri=true;end">MX Player Pro</a>
-	  <a class="dropdown-item text-center" href="nplayer-${vlc}">nPlayer</a>
-	  <a class="dropdown-item text-center" href="potplayer://${url}">PotPlayer</a>
-    </div>
-  </div>
+  
 <br>
   </div>
   </div>
